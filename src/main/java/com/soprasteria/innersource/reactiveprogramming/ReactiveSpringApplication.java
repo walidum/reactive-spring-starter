@@ -1,13 +1,13 @@
-package org.walid.reactivespringstarter;
+package com.soprasteria.innersource.reactiveprogramming;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ReactiveSpringStarterApplication {
+public class ReactiveSpringApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ReactiveSpringStarterApplication.class, args);
+        SpringApplication.run(ReactiveSpringApplication.class, args);
     }
 
 }

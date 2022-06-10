@@ -1,4 +1,4 @@
-package functional.lab2;
+package com.soprasteria.innersource.reactiveprogramming.functional.lab2;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -24,12 +24,5 @@ public class Employee {
         return employee.salary;
     };
 
-    public static void main(String[] args) {
-        var adem = factory.create("Adem", 3000);
-        System.out.println(adem);
-        var newSalary = salaryIncrease.increase(adem, 1200);
-        System.out.println(adem);
-        System.out.println("New salary of adem " + newSalary);
-    }
-
+   
 }

@@ -1,4 +1,4 @@
-package functional.lab2;
+package com.soprasteria.innersource.reactiveprogramming.functional.lab2;
 
 @FunctionalInterface
 public interface SalaryIncrease {

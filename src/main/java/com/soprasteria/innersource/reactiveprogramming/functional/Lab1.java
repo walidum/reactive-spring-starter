@@ -1,4 +1,4 @@
-package functional;
+package com.soprasteria.innersource.reactiveprogramming.functional;
 
 import java.util.concurrent.Callable;
 import java.util.function.Function;
@@ -12,7 +12,7 @@ public class Lab1 {
         System.out.println(calculateLenght.apply(null));
     }
 
-   static Callable<String> getThreadCode = () -> {
+    static Callable<String> getThreadCode = () -> {
         int randomNumber = (int) (Math.random() * ((1024 - 1) + 1));
         return new StringBuilder().append("t").append(Thread.currentThread().getId()).append("-").append(randomNumber).toString();
     };
