@@ -11,11 +11,29 @@ public class Employee {
 
     private String name;
     private Integer salary;
+    private String genre;
+
+    public String getGenre() {
+        if (genre.equals("M") || genre.equals("F")) return genre;
+        throw new RuntimeException("Genre undefined !");
+    }
 
     public Employee(String name, Integer salary) {
         this.name = name;
         this.salary = salary;
+        this.genre = "M";
     }
+
+    public Employee(String name, Integer salary, String genre) {
+        this.name = name;
+        this.salary = salary;
+        this.genre = genre;
+    }
+
+    public Employee() {
+        this.genre = "M";
+    }
+
 
     static IEmployeeFactory factory = (String name, Integer salary) -> new Employee(name, salary);
 
@@ -24,5 +42,5 @@ public class Employee {
         return employee.salary;
     };
 
-   
+
 }
