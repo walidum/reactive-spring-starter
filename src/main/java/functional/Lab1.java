@@ -9,6 +9,7 @@ public class Lab1 {
         System.out.println(getThreadCode.call());
         System.out.println("Résultat de la deuxieme function");
         System.out.println(calculateLenght.apply("java is awesome"));
+        System.out.println(calculateLenght.apply(null));
     }
 
    static Callable<String> getThreadCode = () -> {
